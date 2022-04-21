@@ -68,6 +68,16 @@ img{
 
 }
 
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px
+}
+
 /* header */
 
 .site-header{
@@ -617,8 +627,8 @@ img{
 }
 
 .work__item{
- margin: 0;
- min-width: 285px;
+    margin: 0;
+    min-width: 285px;
 }
 
 .work__item+.work__item{
@@ -648,8 +658,195 @@ img{
 .work__item-desc{
     margin: 0;
     font-family: 'Barlow';
-font-size: 16px;
-line-height: 26px;
-color: #FEFCF7;
-margin-top: 43px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    margin-top: 43px;
+}
+
+
+
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__link{
+    width: 255px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    border-bottom: 1px solid #83888F;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.form__link:hover{
+    opacity: 0.4;
+}
+
+.form__button{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.form__button:hover{
+    opacity: 0.4;
+}
+
+.form__container-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 168px 85px;
+
+}
+
+.form-wrapper{
+    margin-left: 125px;
+}
+
+.form-f{
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.form-heading{
+    margin: 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.checkbox__label{
+    background: #F4F1EB;
+    border-radius: 8px;
+    padding-top: 32px;
+    padding-right: 28px;
+    padding-bottom: 84px;
+    padding-left: 28px;
+}
+
+.checkbox__label:hover{
+    background: #FDD6BA;
+}
+
+.checkbox__label:hover{
+    background: #0E8784;
+}
+
+.checkbox__label+.checkbox__label{
+    margin-left: 23px;
+}
+
+.form__text{
+    margin: 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+
+}
+
+.form__desc{
+    margin: 0;
+    font-family: "Barlow";
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    width: 172px;
+}
+
+.form-wrapper-bottom{
+    margin-top: 86px;
+    margin-left: 460px;
+}
+
+.form-heading-bottom{
+    margin: 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+}
+
+.form-f-bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.checkbox__label-bottom{
+    background: #F4F1EB;
+    border-radius: 8px;
+    padding-top: 32px;
+    padding-right: 28px;
+    padding-bottom: 84px;
+    padding-left: 28px;
+}
+
+.checkbox__label-bottom:hover{
+    background: #FDD6BA;
+}
+
+.checkbox__label-bottom:hover{
+    background: #0E8784;
+}
+
+.checkbox__label-bottom+.checkbox__label-bottom{
+    margin-left: 23px;
+}
+
+
+.summery__wrapper{
+    background: #2C343E;
+    padding: 27px 64px;
+    margin-top: 88px;
+    margin-left: 460px;
+}
+
+.summery__desc{
+    margin: 0;
+    font-family: 'Barlow';
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.summery__heading{
+    margin: 0;
+    width: 602px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.summery--btn{
+position: relative;
+left: 82.4%;
+top: 45px;
+}
+
+span{
+ color: #0E8784;;
 }
